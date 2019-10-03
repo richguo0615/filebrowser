@@ -10,10 +10,10 @@ import (
 	"text/template"
 
 	rice "github.com/GeertJohan/go.rice"
-	"github.com/filebrowser/filebrowser/auth"
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/storage"
-	"github.com/filebrowser/filebrowser/version"
+	"github.com/richguo0615/filebrowser/auth"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/version"
 )
 
 func handleWithStaticData(w http.ResponseWriter, r *http.Request, d *data, box *rice.Box, file, contentType string) (int, error) {

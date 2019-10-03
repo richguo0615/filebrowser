@@ -3,10 +3,10 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/filebrowser/filebrowser/rules"
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/storage"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/rules"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/users"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

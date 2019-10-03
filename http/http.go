@@ -3,8 +3,8 @@ package http
 import (
 	"net/http"
 
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/storage"
 	"github.com/gorilla/mux"
 )
 

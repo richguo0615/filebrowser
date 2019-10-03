@@ -4,10 +4,10 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/filebrowser/filebrowser/errors"
+	"github.com/richguo0615/filebrowser/errors"
 
-	"github.com/filebrowser/filebrowser/files"
-	"github.com/filebrowser/filebrowser/rules"
+	"github.com/richguo0615/filebrowser/files"
+	"github.com/richguo0615/filebrowser/rules"
 	"github.com/spf13/afero"
 )
 

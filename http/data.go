@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/filebrowser/filebrowser/runner"
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/storage"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/runner"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/users"
 )
 
 type handleFunc func(w http.ResponseWriter, r *http.Request, d *data) (int, error)

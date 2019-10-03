@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/errors"
+	"github.com/richguo0615/filebrowser/errors"
 )
 
 func renderJSON(w http.ResponseWriter, r *http.Request, data interface{}) (int, error) {

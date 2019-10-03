@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/users"
 )
 
 // StorageBackend is a storage backend for auth storage.

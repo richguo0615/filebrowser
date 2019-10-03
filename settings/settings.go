@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/rules"
+	"github.com/richguo0615/filebrowser/rules"
 )
 
 // AuthMethod describes an authentication method.

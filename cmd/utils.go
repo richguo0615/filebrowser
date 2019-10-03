@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 
 	"github.com/asdine/storm"
-	"github.com/filebrowser/filebrowser/settings"
-	"github.com/filebrowser/filebrowser/storage"
-	"github.com/filebrowser/filebrowser/storage/bolt"
+	"github.com/richguo0615/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/storage/bolt"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	yaml "gopkg.in/yaml.v2"

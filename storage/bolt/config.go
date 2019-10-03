@@ -2,7 +2,7 @@ package bolt
 
 import (
 	"github.com/asdine/storm"
-	"github.com/filebrowser/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/settings"
 )
 
 type settingsBackend struct {

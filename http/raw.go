@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/files"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/files"
+	"github.com/richguo0615/filebrowser/users"
 	"github.com/hacdias/fileutils"
 	"github.com/mholt/archiver"
 )

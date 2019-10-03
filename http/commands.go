@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/filebrowser/filebrowser/runner"
+	"github.com/richguo0615/filebrowser/runner"
 	"github.com/gorilla/websocket"
 )
 

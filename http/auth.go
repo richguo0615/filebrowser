@@ -10,8 +10,8 @@ import (
 
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/dgrijalva/jwt-go/request"
-	"github.com/filebrowser/filebrowser/errors"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/errors"
+	"github.com/richguo0615/filebrowser/users"
 )
 
 type userInfo struct {

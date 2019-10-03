@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"reflect"
 
-	"github.com/filebrowser/filebrowser/auth"
-	"github.com/filebrowser/filebrowser/settings"
+	"github.com/richguo0615/filebrowser/auth"
+	"github.com/richguo0615/filebrowser/settings"
 	"github.com/spf13/cobra"
 )
 

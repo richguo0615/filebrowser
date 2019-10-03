@@ -2,7 +2,7 @@
   "port": 8181,
   "baseURL": "",
   "address": "",
-  "log": "stdout",
+  "log": "tmp/stdout",
   "database": "tmp/database.db",
   "root": "tmp/srv"
 }

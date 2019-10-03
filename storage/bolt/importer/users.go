@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/asdine/storm"
-	"github.com/filebrowser/filebrowser/rules"
-	"github.com/filebrowser/filebrowser/storage"
-	"github.com/filebrowser/filebrowser/users"
+	"github.com/richguo0615/filebrowser/rules"
+	"github.com/richguo0615/filebrowser/storage"
+	"github.com/richguo0615/filebrowser/users"
 	bolt "go.etcd.io/bbolt"
 )
 

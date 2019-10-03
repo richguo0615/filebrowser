@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/files"
+	"github.com/richguo0615/filebrowser/files"
 
-	"github.com/filebrowser/filebrowser/errors"
-	"github.com/filebrowser/filebrowser/fileutils"
+	"github.com/richguo0615/filebrowser/errors"
+	"github.com/richguo0615/filebrowser/fileutils"
 )
 
 var resourceGetHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
