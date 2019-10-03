@@ -26,6 +26,9 @@ var resourceGetHandler = withUser(func(w http.ResponseWriter, r *http.Request, d
 	if err != nil {
 		return errToStatus(err), err
 	}
+	if !d.Check(r.URL.Path) {
+		return errToStatus(os.ErrPermission), errors.ErrNotExist
+	}
 
 	if file.IsDir {
 		file.Listing.Sorting = d.user.Sorting
@@ -52,6 +55,9 @@ var resourceDeleteHandler = withUser(func(w http.ResponseWriter, r *http.Request
 	if r.URL.Path == "/" || !d.user.Perm.Delete {
 		return http.StatusForbidden, nil
 	}
+	if !d.Check(r.URL.Path) {
+		return errToStatus(os.ErrPermission), errors.ErrNotExist
+	}
 
 	err := d.RunHook(func() error {
 		return d.user.Fs.RemoveAll(r.URL.Path)
@@ -67,6 +73,9 @@ var resourceDeleteHandler = withUser(func(w http.ResponseWriter, r *http.Request
 var resourcePostPutHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
 	if !d.user.Perm.Create && r.Method == http.MethodPost {
 		return http.StatusForbidden, nil
+	}
+	if !d.Check(r.URL.Path) {
+		return errToStatus(os.ErrPermission), errors.ErrNotExist
 	}
 
 	if !d.user.Perm.Modify && r.Method == http.MethodPut {
@@ -131,6 +140,10 @@ var resourcePatchHandler = withUser(func(w http.ResponseWriter, r *http.Request,
 
 	if dst == "/" || src == "/" {
 		return http.StatusForbidden, nil
+	}
+
+	if !d.Check(r.URL.Path) {
+		return errToStatus(os.ErrPermission), errors.ErrNotExist
 	}
 
 	switch action {
