@@ -3,7 +3,7 @@ package runner
 import (
 	"os/exec"
 
-	"github.com/filebrowser/filebrowser/v2/settings"
+	"github.com/filebrowser/filebrowser/settings"
 	"github.com/caddyserver/caddy"
 )
 

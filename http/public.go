@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/v2/files"
+	"github.com/filebrowser/filebrowser/files"
 )
 
 var withHashFile = func(fn handleFunc) handleFunc {

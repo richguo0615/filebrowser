@@ -4,8 +4,8 @@ import (
 	"reflect"
 
 	"github.com/asdine/storm"
-	"github.com/filebrowser/filebrowser/v2/errors"
-	"github.com/filebrowser/filebrowser/v2/users"
+	"github.com/filebrowser/filebrowser/errors"
+	"github.com/filebrowser/filebrowser/users"
 )
 
 type usersBackend struct {

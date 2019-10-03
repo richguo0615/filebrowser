@@ -1,0 +1,8 @@
+{
+  "port": 8181,
+  "baseURL": "",
+  "address": "",
+  "log": "stdout",
+  "database": "tmp/database.db",
+  "root": "tmp/srv"
+}

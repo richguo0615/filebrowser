@@ -3,9 +3,9 @@ package cmd
 import (
 	"regexp"
 
-	"github.com/filebrowser/filebrowser/v2/rules"
-	"github.com/filebrowser/filebrowser/v2/settings"
-	"github.com/filebrowser/filebrowser/v2/users"
+	"github.com/filebrowser/filebrowser/rules"
+	"github.com/filebrowser/filebrowser/settings"
+	"github.com/filebrowser/filebrowser/users"
 	"github.com/spf13/cobra"
 )
 
