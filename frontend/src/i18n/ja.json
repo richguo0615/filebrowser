@@ -32,7 +32,8 @@
     "toggleSidebar": "サイドバーを表示する",
     "update": "更新",
     "upload": "アップロード",
-    "permalink": "固定リンク"
+    "permalink": "固定リンク",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "リンクがコピーされました！"

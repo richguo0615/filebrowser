@@ -32,7 +32,8 @@
     "toggleSidebar": "사이드바 전환",
     "update": "업데이트",
     "upload": "업로드",
-    "permalink": "링크 얻기"
+    "permalink": "링크 얻기",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "링크가 복사되었습니다!"

@@ -32,7 +32,8 @@
     "toggleSidebar": "Mostra/nascondi la barra laterale",
     "update": "Aggiorna",
     "upload": "Carica",
-    "permalink": "Ottieni link permanente"
+    "permalink": "Ottieni link permanente",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Link copiato!"

@@ -32,7 +32,8 @@
     "toggleSidebar": "Mostrar/Ocultar menú",
     "update": "Actualizar",
     "upload": "Subir",
-    "permalink": "Link permanente"
+    "permalink": "Link permanente",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "¡Link copiado!"

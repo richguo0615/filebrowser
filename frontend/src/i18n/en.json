@@ -32,7 +32,8 @@
     "toggleSidebar": "Toggle sidebar",
     "update": "Update",
     "upload": "Upload",
-    "permalink": "Get Permanent Link"
+    "permalink": "Get Permanent Link",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Link copied!"

@@ -32,7 +32,8 @@
     "toggleSidebar": "切換側邊欄",
     "update": "更新",
     "upload": "上傳",
-    "permalink": "獲取永久連結"
+    "permalink": "獲取永久連結",
+    "buildImg": "產出圖片"
   },
   "success": {
     "linkCopied": "連結已複製！"

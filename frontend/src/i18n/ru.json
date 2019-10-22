@@ -32,7 +32,8 @@
     "toggleSidebar": "Боковая панель",
     "update": "Обновить",
     "upload": "Загрузить",
-    "permalink": "Получить постоянную ссылку"
+    "permalink": "Получить постоянную ссылку",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Ссылка скопирована!"

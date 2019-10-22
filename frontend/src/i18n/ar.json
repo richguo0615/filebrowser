@@ -32,7 +32,8 @@
     "toggleSidebar": "تبديل الشريط الجانبي",
     "update": "تحديث",
     "upload": "رفع",
-    "permalink": "الحصول على لنك دائم"
+    "permalink": "الحصول على لنك دائم",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "تم نسخ الملف"

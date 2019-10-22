@@ -32,7 +32,8 @@
     "toggleSidebar": "Alternar barra lateral",
     "update": "Atualizar",
     "upload": "Enviar",
-    "permalink": "Obter link permanente"
+    "permalink": "Obter link permanente",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Link copiado!"

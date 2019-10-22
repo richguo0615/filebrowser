@@ -32,7 +32,8 @@
     "toggleSidebar": "Comută bara laterală",
     "update": "Actualizează",
     "upload": "Încarcă",
-    "permalink": "Obține legătura permanentă"
+    "permalink": "Obține legătura permanentă",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Legătură copiată!"

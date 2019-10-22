@@ -32,7 +32,8 @@
     "toggleSidebar": "Zijbalk tonen",
     "update": "Updaten",
     "upload": "Uploaden",
-    "permalink": "Maak permanente link"
+    "permalink": "Maak permanente link",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Link gekopieerd!"

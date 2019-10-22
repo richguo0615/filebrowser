@@ -32,7 +32,8 @@
     "toggleSidebar": "Seitenleiste anzeigen",
     "update": "Update",
     "upload": "Upload",
-    "permalink": "permanenten Verweis anzeigen"
+    "permalink": "permanenten Verweis anzeigen",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Verweis wurde kopiert!"

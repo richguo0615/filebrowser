@@ -141,3 +141,15 @@ export async function checksum (url, algo) {
   const data = await resourceAction(`${url}?checksum=${algo}`, 'GET')
   return (await data.json()).checksums[algo]
 }
+
+export function buildImg () {
+  let url = `${baseURL}/api/buildImg`
+
+  const res = fetchURL(url, {})
+
+  if (res.status === 200) {
+    return res.json()
+  } else {
+    throw new Error(res.status)
+  }
+}

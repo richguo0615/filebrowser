@@ -32,7 +32,8 @@
     "toggleSidebar": "Växla sidofält",
     "update": "Uppdatera",
     "upload": "Ladda upp",
-    "permalink": "Skapa en permanent länk"
+    "permalink": "Skapa en permanent länk",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Länk kopierad"

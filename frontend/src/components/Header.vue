@@ -41,7 +41,6 @@
             <delete-button v-show="showDeleteButton"></delete-button>
           </div>
 
-          <shell-button v-show="user.perm.execute" />
           <switch-button v-show="isListing"></switch-button>
           <download-button v-show="showDownloadButton"></download-button>
           <upload-button v-show="showUpload"></upload-button>
@@ -51,6 +50,8 @@
             <i class="material-icons">check_circle</i>
             <span>{{ $t('buttons.select') }}</span>
           </button>
+
+          <build-img-button></build-img-button>
         </div>
       </template>
 
@@ -71,6 +72,7 @@ import MoveButton from './buttons/Move'
 import CopyButton from './buttons/Copy'
 import ShareButton from './buttons/Share'
 import ShellButton from './buttons/Shell'
+import BuildImgButton from './buttons/BuildImg'
 import {mapGetters, mapState} from 'vuex'
 import { logoURL } from '@/utils/constants'
 import * as api from '@/api'
@@ -89,7 +91,8 @@ export default {
     UploadButton,
     SwitchButton,
     MoveButton,
-    ShellButton
+    ShellButton,
+    BuildImgButton
   },
   data: function () {
     return {

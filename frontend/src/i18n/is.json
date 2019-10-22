@@ -32,7 +32,8 @@
     "toggleSidebar": "Sýna hliðarstiku",
     "update": "Vista",
     "upload": "Hlaða upp",
-    "permalink": "Sækja fastan hlekk"
+    "permalink": "Sækja fastan hlekk",
+    "buildImg": "Build Img"
   },
   "success": {
     "linkCopied": "Hlekkur afritaður!"

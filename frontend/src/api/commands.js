@@ -1,4 +1,4 @@
-import { removePrefix } from './utils'
+import {removePrefix} from './utils'
 import { baseURL } from '@/utils/constants'
 import store from '@/store'
 
