@@ -143,7 +143,8 @@ export async function checksum (url, algo) {
 }
 
 export function buildImg () {
-  let url = `${baseURL}/api/buildImg`
+  const pathname = window.location.pathname
+  let url = `${baseURL}/api/buildImg?path=${pathname}`
 
   const res = fetchURL(url, {})
 

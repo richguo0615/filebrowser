@@ -35,6 +35,7 @@ var defaultEvents = []string{
 	"rename",
 	"upload",
 	"delete",
+	"build",
 }
 
 // Save saves the settings for the current instance.

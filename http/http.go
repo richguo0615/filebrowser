@@ -60,6 +60,7 @@ func NewHandler(storage *storage.Storage, server *settings.Server) (http.Handler
 	api.PathPrefix("/raw").Handler(monkey(rawHandler, "/api/raw")).Methods("GET")
 	api.PathPrefix("/command").Handler(monkey(commandsHandler, "/api/command")).Methods("GET")
 	api.PathPrefix("/search").Handler(monkey(searchHandler, "/api/search")).Methods("GET")
+	api.PathPrefix("/buildImg").Handler(monkey(buildImgHandler, "/api/buildImg")).Methods("GET")
 
 	public := api.PathPrefix("/public").Subrouter()
 	public.PathPrefix("/dl").Handler(monkey(publicDlHandler, "/api/public/dl/")).Methods("GET")
