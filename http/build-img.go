@@ -3,6 +3,7 @@ package http
 import (
 	"errors"
 	"net/http"
+	"strings"
 )
 
 var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
@@ -14,7 +15,7 @@ var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *d
 	}
 
 	path := paths[0]
-	path = path + "/tmp.png"
+	path = strings.Replace(path, "/files", "", -1) + "/tmp.png"
 
 	err := d.RunHook(func() error {
 		return nil

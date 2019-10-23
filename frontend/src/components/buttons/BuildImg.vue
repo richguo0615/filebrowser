@@ -15,7 +15,7 @@ export default {
             api.buildImg()
             setTimeout(() => {
                 this.$store.commit('setTransLoading', false)
-            }, 5000)
+            }, 8000)
         }
     }
 }
