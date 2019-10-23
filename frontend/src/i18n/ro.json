@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "Descarcă fișier",
     "downloadFolder": "Descarcă director"
+  },
+  "loading": {
+    "processing": "Please wait for processing"
   }
 }

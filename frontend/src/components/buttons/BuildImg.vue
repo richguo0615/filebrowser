@@ -11,7 +11,11 @@ export default {
     name: 'build-img-button',
     methods: {
         buildImg: function () {
+            this.$store.commit('setTransLoading', true)
             api.buildImg()
+            setTimeout(() => {
+                this.$store.commit('setTransLoading', false)
+            }, 5000)
         }
     }
 }

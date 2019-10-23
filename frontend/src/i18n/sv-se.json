@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "Ladda ner fil",
     "downloadFolder": "Ladda ner mapp"
+  },
+  "loading": {
+    "processing": "Please wait for processing"
   }
 }

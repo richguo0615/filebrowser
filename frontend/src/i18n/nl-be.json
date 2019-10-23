@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "Bestand downloaden",
     "downloadFolder": "Map downloaden"
+  },
+  "loading": {
+    "processing": "Please wait for processing"
   }
 }

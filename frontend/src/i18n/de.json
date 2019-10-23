@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "Download Datei",
     "downloadFolder": "Download Ordner"
+  },
+  "loading": {
+    "processing": "Please wait for processing"
   }
 }

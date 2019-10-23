@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "Sækja skjal",
     "downloadFolder": "Sækja möppu"
+  },
+  "loading": {
+    "processing": "Please wait for processing"
   }
 }

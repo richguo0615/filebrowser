@@ -28,6 +28,7 @@ const mutations = {
     state.showMessage = value
   },
   setLoading: (state, value) => { state.loading = value },
+  setTransLoading: (state, value) => { state.transLoading = value },
   setReload: (state, value) => { state.reload = value },
   setUser: (state, value) => {
     if (value === null) {
@@ -85,7 +86,7 @@ const mutations = {
   },
   setProgress: (state, value) => {
     state.progress = value
-  }
+  },
 }
 
 export default mutations

@@ -233,5 +233,8 @@
   "download": {
     "downloadFile": "下載檔案",
     "downloadFolder": "下載資料夾"
+  },
+  "loading": {
+    "processing": "處理中，請稍候"
   }
 }

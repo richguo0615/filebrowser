@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Loading v-show="this.$store.state.transLoading" :text="$t('loading.processing')"></Loading>
     <div id="progress">
       <div v-bind:style="{ width: $store.state.progress + '%' }"></div>
     </div>
@@ -19,6 +20,7 @@ import Sidebar from '@/components/Sidebar'
 import Prompts from '@/components/prompts/Prompts'
 import SiteHeader from '@/components/Header'
 import Shell from '@/components/Shell'
+import Loading from '@/components/loading/Loading'
 
 export default {
   name: 'layout',
@@ -26,11 +28,12 @@ export default {
     Sidebar,
     SiteHeader,
     Prompts,
-    Shell
+    Shell,
+    Loading
   },
   computed: {
     ...mapGetters([ 'isLogged' ]),
-    ...mapState([ 'user' ])
+    ...mapState([ 'user' ]),
   },
   watch: {
     '$route': function () {
