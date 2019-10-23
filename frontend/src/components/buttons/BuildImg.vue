@@ -6,13 +6,13 @@
 </template>
 
 <script>
-    import { files as api } from '@/api'
-    export default {
-        name: 'build-img-button',
-        methods: {
-            buildImg: function () {
-                api.buildImg()
-            }
+import { files as api } from '@/api'
+export default {
+    name: 'build-img-button',
+    methods: {
+        buildImg: function () {
+            api.buildImg()
         }
     }
+}
 </script>

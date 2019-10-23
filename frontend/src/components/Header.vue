@@ -51,7 +51,7 @@
             <span>{{ $t('buttons.select') }}</span>
           </button>
 
-          <build-img-button></build-img-button>
+          <build-img-button v-show="showBuild"></build-img-button>
         </div>
       </template>
 
@@ -128,6 +128,9 @@ export default {
     logoURL: () => logoURL,
     isMobile () {
       return this.width <= 736
+    },
+    showBuild () {
+      return this.isListing && this.user.perm.create
     },
     showUpload () {
       return this.isListing && this.user.perm.create

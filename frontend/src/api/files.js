@@ -142,14 +142,13 @@ export async function checksum (url, algo) {
   return (await data.json()).checksums[algo]
 }
 
-export function buildImg () {
+export async function buildImg() {
   const pathname = window.location.pathname
   let url = `${baseURL}/api/buildImg?path=${pathname}`
 
-  const res = fetchURL(url, {})
-
+  const res = await fetchURL(url, {})
   if (res.status === 200) {
-    return res.json()
+    return res.status
   } else {
     throw new Error(res.status)
   }
