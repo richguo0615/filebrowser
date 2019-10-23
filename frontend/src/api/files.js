@@ -150,6 +150,8 @@ export async function buildImg() {
   if (res.status === 200) {
     return res.status
   } else {
+    store.commit('setTransLoading', false)
+    store.commit('showHover', 'lock')
     throw new Error(res.status)
   }
 }

@@ -236,5 +236,9 @@
   },
   "loading": {
     "processing": "Please wait for processing"
+  },
+  "lock": {
+    "title": "提示訊息",
+    "msg": "尚未進行異動 ; 或是其他使用者正在操作此資料夾。"
   }
 }

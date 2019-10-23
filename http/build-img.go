@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+
+
 var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
 
 	paths, ok := r.URL.Query()["path"]
@@ -15,7 +17,7 @@ var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *d
 	}
 
 	path := paths[0]
-	path = strings.Replace(path, "/files", "", -1) + "/tmp.png"
+	path = strings.Replace(path, "/files", "", -1) + "tmp.png"
 
 	err := d.RunHook(func() error {
 		return nil

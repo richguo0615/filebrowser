@@ -11,6 +11,7 @@
     <copy v-else-if="showCopy"></copy>
     <replace v-else-if="showReplace"></replace>
     <share v-else-if="show === 'share'"></share>
+    <lock-msg v-else-if="showLockMsg"></lock-msg>
     <div v-show="showOverlay" @click="resetPrompts" class="overlay"></div>
   </div>
 </template>
@@ -27,6 +28,7 @@ import NewFile from './NewFile'
 import NewDir from './NewDir'
 import Replace from './Replace'
 import Share from './Share'
+import LockMsg from './LockMsg'
 import { mapState } from 'vuex'
 import buttons from '@/utils/buttons'
 
@@ -43,7 +45,8 @@ export default {
     NewFile,
     NewDir,
     Help,
-    Replace
+    Replace,
+    LockMsg
   },
   data: function () {
     return {
@@ -66,6 +69,7 @@ export default {
     showNewDir: function () { return this.show === 'newDir' },
     showDownload: function () { return this.show === 'download' },
     showReplace: function () { return this.show === 'replace' },
+    showLockMsg: function () { return this.show === 'lock' },
     showOverlay: function () {
       return (this.show !== null && this.show !== 'search' && this.show !== 'more')
     }
