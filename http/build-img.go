@@ -4,11 +4,19 @@ import (
 	"errors"
 	"net/http"
 	"strings"
+	"time"
 )
 
 
+var canBuild = time.Now().Unix()
 
 var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {
+
+	if time.Now().Unix() < canBuild {
+		err := errors.New("please wait for last one shell request done")
+		return errToStatus(err), err
+	}
+	canBuild = nextTimeBuild()
 
 	paths, ok := r.URL.Query()["path"]
 	if !ok {
@@ -29,3 +37,7 @@ var buildImgHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *d
 
 	return http.StatusOK, nil
 })
+
+func nextTimeBuild() int64 {
+	return time.Now().Unix() + 10
+}
